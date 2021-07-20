@@ -8,9 +8,199 @@
     --blue: #0084E4;
     --dark: #333333;
     --light-gray: #F0F0F0;
-    --gray: #C7C7C7;
+    --gray: #a1a1a1;
 }
 
 body {
     background-color: #F6F6F6;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+/* ---------- Clock ---------- */
+.clock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    min-height: 600px;
+    min-width: 600px;
+
+    border-radius: 50%;
+
+    background-color: var(--dark);
+}
+/* ----- pointer marking ----- */
+.clock .pointer-marking {
+    position: relative;
+
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    align-items: center
+}
+.clock .pointer-marking .marking {
+    display: flex;
+    justify-content: space-between;
+
+    position: absolute;
+
+    height: 10px;
+    width: 100%;
+}
+.clock .pointer-marking .marking .marking-element {
+    background-color: var(--blue);
+    height: 10px;
+    width: 30px;
+}
+/* ----- pointers ----- */
+.clock .pointers {
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clock .pointers .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    width: 20px;
+    height: 20px;
+}
+.clock .pointers .center .center-element{
+    position: absolute;
+
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+
+    background-color: var(--light-gray);
+    z-index: 9999;
+}
+.clock .pointers .hours-pointer {
+    transform-origin: left;
+    position: absolute;
+
+    left: 10px;
+    z-index: 10;
+
+    height: 10px;
+    width: 90px;
+    border-radius: 0 5px 5px 0;
+
+    background-color: var(--light-gray);
+}
+.clock .pointers .minutes-pointer {
+    transform-origin: left;
+    position: absolute;
+
+    left: 10px;
+    z-index: 5;
+
+    height: 10px;
+    width: 165px;
+    border-radius: 0 5px 5px 0;
+
+    background-color: var(--gray);
+}
+.clock .pointers .seconds-pointer {
+    transform-origin: left;
+    position: absolute;
+
+    left: 10px;
+    z-index: 1;
+
+    height: 5px;
+    width: 125px;
+    border-radius: 0 5px 5px 0;
+
+    background-color: var(--blue);
+}
+/* ----- digital-clock ----- */
+.clock .digital-clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+
+    height: 80px;
+    width: 260px;
+
+    background-color: var(--light-gray);
+    border-radius: 5px;
+
+    bottom: 80px;
+}
+.clock .digital-clock p {
+    font-size: 3rem;
+    color: var(--dark);
+}
+
+@media screen and (max-width: 600px) {
+    /* ----------- Clock ---------- */
+    .clock {
+        min-height: 300px;
+        min-width: 300px;
+    }
+    .clock .pointer-marking .marking .marking-element {
+        background-color: var(--blue);
+        height: 5px;
+        width: 15px;
+    }
+    /* ----- pointers ----- */
+    .clock .pointers .center .center-element{ 
+        width: 15px;
+        height: 15px; 
+    }
+    .clock .pointers .hours-pointer {
+        left: 5px;
+    
+        height: 5px;
+        width: 60px;
+    }
+    .clock .pointers .minutes-pointer {
+        left: 10px;
+    
+        height: 5px;
+        width: 90px;
+
+        transform: rotate(0deg);
+    }
+    .clock .pointers .seconds-pointer {
+        left: 10px;
+
+        height: 2.5px;
+        width: 80px;
+    }
+    /* ----- digital clock ----- */
+    .clock .digital-clock {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+    /* ----------- Clock ---------- */
+    .clock {
+        min-height: 250px;
+        min-width: 250px;
+    }
+    .clock .pointer-marking .marking .marking-element {
+        background-color: var(--blue);
+        height: 2.5px;
+        width: 7.5px;
+    }
+    
 }
