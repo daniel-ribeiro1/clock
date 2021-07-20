@@ -152,6 +152,7 @@ body {
 /* ---------- Footer ---------- */
 footer {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 
@@ -159,7 +160,8 @@ footer {
     margin-top: 40px;
 }
 footer p {
-    margin-left: 1rem;
+    margin: 1rem;
+    text-align: center;
     color: var(--dark);
 }
 
