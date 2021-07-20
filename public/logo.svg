@@ -1,19 +1,7 @@
 <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="30" cy="30" r="28" fill="white" stroke="black" stroke-width="4"/>
-<path d="M33 30H27V19C27 17.3431 28.3431 16 30 16V16C31.6569 16 33 17.3431 33 19V30Z" fill="black"/>
-<path d="M27.8388 29L30.6672 31.8284L23.2426 39.253C22.4616 40.0341 21.1952 40.0341 20.4142 39.253V39.253C19.6331 38.472 19.6331 37.2057 20.4142 36.4246L27.8388 29Z" fill="#0084E4"/>
-<path d="M30 33V27H50C51.6569 27 53 28.3431 53 30V30C53 31.6569 51.6569 33 50 33H30Z" fill="black"/>
+<circle cx="30" cy="30" r="28" fill="white" stroke="#222222" stroke-width="4"/>
+<path d="M32 30H28V18C28 16.8954 28.8954 16 30 16V16C31.1046 16 32 16.8954 32 18V30Z" fill="#222222"/>
+<path d="M28.8388 30L30.253 31.4142L22.1213 39.5459C21.7308 39.9365 21.0976 39.9365 20.7071 39.5459V39.5459C20.3166 39.1554 20.3166 38.5223 20.7071 38.1317L28.8388 30Z" fill="#0084E4"/>
+<path d="M30 32.8284L32.8284 29.9999L44.1421 41.3137C44.9232 42.0947 44.9232 43.361 44.1421 44.1421V44.1421C43.3611 44.9231 42.0948 44.9231 41.3137 44.1421L30 32.8284Z" fill="#222222"/>
 <circle cx="30" cy="30" r="3" fill="#E7E7E7"/>
-<rect x="57" y="29.5" width="3" height="1" fill="black"/>
-<rect y="28.9" width="3" height="1" fill="black"/>
-<rect x="29.5" y="3" width="3" height="1" transform="rotate(-90 29.5 3)" fill="black"/>
-<rect x="29.5" y="60" width="3" height="1" transform="rotate(-90 29.5 60)" fill="black"/>
-<rect x="43.067" y="6.36731" width="3" height="1" transform="rotate(-60 43.067 6.36731)" fill="black"/>
-<rect x="14.567" y="55.7308" width="3" height="1" transform="rotate(-60 14.567 55.7308)" fill="black"/>
-<rect x="4.26923" y="14.567" width="3" height="1" transform="rotate(30 4.26923 14.567)" fill="black"/>
-<rect x="53.6327" y="43.0669" width="3" height="1" transform="rotate(30 53.6327 43.0669)" fill="black"/>
-<rect x="53.1327" y="16.067" width="3" height="1" transform="rotate(-30 53.1327 16.067)" fill="black"/>
-<rect x="3.76923" y="44.5669" width="3" height="1" transform="rotate(-30 3.76923 44.5669)" fill="black"/>
-<rect x="15.433" y="3.76923" width="3" height="1" transform="rotate(60 15.433 3.76923)" fill="black"/>
-<rect x="43.933" y="53.1327" width="3" height="1" transform="rotate(60 43.933 53.1327)" fill="black"/>
 </svg>

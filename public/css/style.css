@@ -15,6 +15,7 @@ body {
     background-color: #F6F6F6;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -36,7 +37,7 @@ body {
 
     background-color: var(--dark);
 }
-/* ----- pointer marking ----- */
+/* -- pointer marking -- */
 .clock .pointer-marking {
     position: relative;
 
@@ -60,7 +61,7 @@ body {
     height: 10px;
     width: 30px;
 }
-/* ----- pointers ----- */
+/* -- pointers -- */
 .clock .pointers {
     position: absolute;
 
@@ -127,7 +128,7 @@ body {
 
     background-color: var(--blue);
 }
-/* ----- digital-clock ----- */
+/* -- digital-clock -- */
 .clock .digital-clock {
     display: flex;
     justify-content: center;
@@ -145,6 +146,20 @@ body {
 }
 .clock .digital-clock p {
     font-size: 3rem;
+    color: var(--dark);
+}
+
+/* ---------- Footer ---------- */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 80px;
+    margin-top: 40px;
+}
+footer p {
+    margin-left: 1rem;
     color: var(--dark);
 }
 
